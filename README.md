@@ -32,5 +32,5 @@ The **Farmer Helping Application** aims to empower farmers by offering reliable 
 
 ---
 
-## 📁 Project Structure
+
 
