@@ -42,3 +42,5 @@ The **Farmer Helping Application** is built to empower farmers with reliable agr
 
 ---
 
+## 📁 Project Structure
+
