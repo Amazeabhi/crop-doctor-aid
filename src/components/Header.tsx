@@ -1,5 +1,6 @@
 import { Leaf, Menu } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { ThemeToggle } from '@/components/ThemeToggle';
 import { useState } from 'react';
 
 export const Header = () => {
@@ -22,19 +23,22 @@ export const Header = () => {
           <a href="#how-it-works" className="text-muted-foreground hover:text-primary transition-colors font-medium">
             How it Works
           </a>
+          <ThemeToggle />
           <Button variant="hero" size="sm">
             Get Started
           </Button>
         </nav>
 
-        <Button 
-          variant="ghost" 
-          size="icon" 
-          className="md:hidden"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-        >
-          <Menu className="w-6 h-6" />
-        </Button>
+        <div className="flex items-center gap-2 md:hidden">
+          <ThemeToggle />
+          <Button 
+            variant="ghost" 
+            size="icon" 
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            <Menu className="w-6 h-6" />
+          </Button>
+        </div>
       </div>
 
       {isMenuOpen && (
